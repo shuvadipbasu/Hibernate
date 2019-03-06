@@ -1,0 +1,4 @@
+23:08:50,597 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Shuvadip1]
+23:08:50,600 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Basu]
+23:08:50,600 TRACE BasicBinder:65 - binding parameter [3] as [VARCHAR] - [9903246300]
+23:08:50,601 TRACE BasicBinder:65 - binding parameter [4] as [BIGINT] - [2]

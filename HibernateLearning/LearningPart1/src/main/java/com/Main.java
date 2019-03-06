@@ -11,7 +11,7 @@ public class Main {
         Session ses = HibernateUtil.getSessionFactory().openSession();
         Transaction tx = ses.beginTransaction();
 
-        Employee emp = new Employee("Shuvadip","Basu",Long.valueOf(1),"9903246300");
+        Employee emp = new Employee("Shuvadip1","Basu",Long.valueOf(3),"9903246300");
 
         ses.save(emp);
         tx.commit();
