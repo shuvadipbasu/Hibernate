@@ -10,6 +10,7 @@
     <modules>
         <module>EcommerceOrderProcessing</module>
         <module>LearningPart1</module>
+        <module>HibernatePart2</module>
     </modules>
     <packaging>pom</packaging>
 
