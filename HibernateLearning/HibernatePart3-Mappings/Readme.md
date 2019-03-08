@@ -1,4 +1,4 @@
-** One To One Mapping **
+**** One To One Mapping ****
 Consider Employee to Personal Details relationship 1 employee's personal details
 corresponds to one single personal details. Causing one to one relationship
 
@@ -15,7 +15,7 @@ corresponds to one single personal details. Causing one to one relationship
     to the leaser class and annotate with mappedBy like below.
     @OneToOne(mappedBy = "personalDetails")
     
-** @Embeddable and @Embedded **
+**** @Embeddable and @Embedded ****
 Consider Personal Details and Address relationship. Address only exists if personal details exists.
 it is the part of personal details. So only single table personal details and address(columns of address)
 at db side. but at java side you can decouple it. using above annotations.
@@ -38,5 +38,5 @@ Leaser class annitations
 @ManyToMany(mappedBy = "skills")
 
 
-**_ PLEASE DONT FORGET TO PROVIDE NO ARGUMENT CONSTRUCTOR AT THE ENTITIES IN ANY RELATIONSHIP_ **
+****_ PLEASE DONT FORGET TO PROVIDE NO ARGUMENT CONSTRUCTOR AT THE ENTITIES IN ANY RELATIONSHIP_ ****
 
