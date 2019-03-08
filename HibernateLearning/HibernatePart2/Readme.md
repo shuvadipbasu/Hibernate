@@ -28,7 +28,7 @@ When you persist the owner obect inverse obect also gets persisted automatically
 
 Now Many side is the owner in most of the time in java point of view.
 From DB point of view the table which will have the fk is the owner of the relationship.
-
+you see mappedby thats the inverse end and not the owner
 
 **Cascading**
 Cascading deals with the whole object graph. Meaning if you want to save dept while saving employee

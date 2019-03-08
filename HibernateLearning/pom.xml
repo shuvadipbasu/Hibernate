@@ -11,6 +11,7 @@
         <module>EcommerceOrderProcessing</module>
         <module>LearningPart1</module>
         <module>HibernatePart2</module>
+        <module>HibernatePart3-Mappings</module>
     </modules>
     <packaging>pom</packaging>
 
