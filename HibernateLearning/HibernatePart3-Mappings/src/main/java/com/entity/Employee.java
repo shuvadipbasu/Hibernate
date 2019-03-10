@@ -2,6 +2,7 @@ package com.entity;
 
 import javax.naming.Name;
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,8 +26,33 @@ public class Employee {
     )
     private Set<Skills> skills = new HashSet<Skills>();
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "STATUS")
+    private EmployeeStatus employeeStatus;
 
-   public PersonalDetails getPersonalDetails() {
+    @ElementCollection
+    @CollectionTable( name = "EMPLOYEE_ACCESS",
+        joinColumns = @JoinColumn(name = "EMP_ID"))
+    @Column(name = "ODC_NAME")
+    private Collection<String> accssibleODC;
+
+    public Collection<String> getAccssibleODC() {
+        return accssibleODC;
+    }
+
+    public void setAccssibleODC(Collection<String> accssibleODC) {
+        this.accssibleODC = accssibleODC;
+    }
+
+    public EmployeeStatus getEmployeeStatus() {
+        return employeeStatus;
+    }
+
+    public void setEmployeeStatus(EmployeeStatus employeeStatus) {
+        this.employeeStatus = employeeStatus;
+    }
+
+    public PersonalDetails getPersonalDetails() {
         return personalDetails;
     }
 
