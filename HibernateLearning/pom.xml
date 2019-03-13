@@ -12,6 +12,7 @@
         <module>LearningPart1</module>
         <module>HibernatePart2</module>
         <module>HibernatePart3-Mappings</module>
+        <module>WorkingWithJPA</module>
     </modules>
     <packaging>pom</packaging>
 
